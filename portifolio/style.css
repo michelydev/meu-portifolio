@@ -1,0 +1,487 @@
+/* style.css */
+
+:root {
+
+  --bg: #fff7fb;
+  --text: #1a1a1a;
+
+  --card: #ffffff;
+
+  --primary: #ff4da6;
+
+  --gradient1: #ff4da6;
+  --gradient2: #7c3aed;
+
+}
+
+body.dark {
+
+  --bg: #0f0f14;
+  --text: #f5f5f5;
+
+  --card: #1b1b24;
+
+  --primary: #ff4da6;
+
+  --gradient1: #ff4da6;
+  --gradient2: #4f7cff;
+
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+
+  background: var(--bg);
+  color: var(--text);
+
+  font-family: 'Poppins', sans-serif;
+
+  transition: 0.3s ease;
+
+}
+
+/* BOTÃO TEMA */
+/* BOTÃO TEMA GLASS */
+.theme-btn {
+
+  position: fixed;
+
+  top: 20px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+  transition: 0.3s ease;
+
+    color: white; /* padrão modo escuro */
+}
+
+/* modo claro */
+body:not(.dark) .theme-btn {
+  color: #1a1a1a;
+
+}
+
+.theme-btn:hover {
+  transform: scale(1.08);
+}
+
+/* animação do ícone */
+.rotate {
+  animation: spin 0.5s ease;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(180deg); }
+}
+
+/* HERO */
+.hero {
+
+  background: linear-gradient(
+    135deg,
+    var(--gradient1),
+    var(--gradient2)
+  );
+
+  padding: 120px 10% 90px;
+
+  color: white;
+
+}
+
+/* HERO CONTENT */
+.hero-content {
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 50px;
+
+  flex-wrap: nowrap;
+
+}
+
+/* FOTO */
+.hero-image {
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* FOTO PERFIL */
+.profile-img {
+
+  width: 180px;
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 4px solid rgba(255,255,255,0.85);
+
+  box-shadow:
+    0 0 0 6px rgba(255,255,255,0.15),
+    0 10px 30px rgba(0,0,0,0.25);
+
+  transition: 0.3s;
+
+}
+
+.profile-img:hover {
+  transform: scale(1.03);
+}
+
+/* TEXTO */
+.hero-text {
+  max-width: 650px;
+}
+
+/* TÍTULO */
+.hero-text h1 {
+
+  font-size: 64px;
+  font-weight: 700;
+
+  margin-bottom: 15px;
+
+}
+
+/* LINHA */
+.line {
+
+  width: 80px;
+  height: 4px;
+
+  background: white;
+
+  border-radius: 999px;
+
+  margin-bottom: 25px;
+
+}
+
+/* PARÁGRAFO */
+.hero-text p {
+
+  font-size: 22px;
+
+  line-height: 1.7;
+
+  opacity: 0.95;
+
+}
+
+/* CONTAINER */
+.container {
+
+  max-width: 1150px;
+
+  margin: auto;
+
+  padding: 50px 20px;
+
+}
+
+/* SECTION */
+section {
+  margin-bottom: 50px;
+}
+
+/* TITULOS */
+h2 {
+
+  margin-bottom: 20px;
+
+  border-left: 5px solid var(--primary);
+
+  padding-left: 12px;
+
+  font-size: 28px;
+
+}
+
+/* GRID */
+.grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 20px;
+
+}
+
+/* CARD */
+.card {
+
+  background: var(--card);
+
+  padding: 22px;
+
+  border-radius: 18px;
+
+  transition: 0.3s;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* CARDS DE GRID */
+.grid .card {
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  height: 100%;
+
+}
+
+/* TITULO CARD */
+.card h3 {
+  margin-bottom: 10px;
+}
+
+/* TEXTO CARD */
+.card p {
+  line-height: 1.6;
+}
+
+/* TAGS */
+.tags {
+
+  margin-top: auto;
+  padding-top: 20px;
+
+}
+
+/* TAG */
+.tag {
+
+  display: inline-block;
+
+  background: rgba(255, 77, 166, 0.15);
+
+  color: var(--primary);
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+
+  margin-right: 8px;
+
+  font-weight: 500;
+
+}
+
+/* SKILLS */
+.skills {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+}
+
+.skills span {
+
+  background: var(--primary);
+
+  color: white;
+
+  padding: 10px 16px;
+
+  border-radius: 999px;
+
+  font-weight: 500;
+
+}
+
+/* BOTÃO PADRÃO (CERTIFICADOS) */
+.btn {
+
+  display: inline-block;
+
+  margin-top: 15px;
+
+  padding: 10px 16px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: var(--primary);
+  color: white;
+
+  font-family: 'Poppins', sans-serif; /* 🔥 AQUI O FIX */
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+
+/* LINKS */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+
+  text-align: center;
+
+  padding: 30px;
+
+  opacity: 0.7;
+
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+  .hero-content {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 42px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .line {
+    margin: 20px auto;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+}
+
+/* MODAL */
+.modal {
+
+  display: none;
+
+  position: fixed;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.85);
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 2000;
+
+  padding: 20px;
+
+}
+
+/* IMAGEM MODAL */
+.modal-content {
+
+  max-width: 90%;
+  max-height: 85%;
+
+  border-radius: 18px;
+
+  box-shadow: 0 25px 70px rgba(0,0,0,0.6);
+
+  animation: zoom 0.25s ease;
+
+}
+
+/* FECHAR */
+.close {
+
+  position: absolute;
+
+  top: 20px;
+  right: 25px;
+
+  font-size: 42px;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+}
+
+.close:hover {
+  transform: scale(1.2);
+  color: #ff4da6;
+}
+
+/* ANIMAÇÃO */
+@keyframes zoom {
+
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
