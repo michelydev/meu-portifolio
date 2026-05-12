@@ -1,0 +1,497 @@
+:root {
+
+  --bg: #fff7fb;
+  --text: #1a1a1a;
+  --card: #ffffff;
+
+  --primary: #ff4da6;
+
+  --gradient1: #ff4da6;
+  --gradient2: #7c3aed;
+
+}
+
+body.dark {
+
+  --bg: #0f0f14;
+  --text: #f5f5f5;
+  --card: #1b1b24;
+
+  --gradient1: #ff4da6;
+  --gradient2: #4f7cff;
+
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  background: var(--bg);
+  color: var(--text);
+
+  font-family: 'Poppins', sans-serif;
+
+  transition: 0.3s ease;
+
+  overflow-x: hidden; /* 🔥 FIX IMPORTANTE */
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+  background: linear-gradient(135deg, var(--gradient1), var(--gradient2));
+  padding: 120px 10%;
+  color: white;
+
+}
+
+.hero-content {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 50px;
+
+}
+
+/* FOTO COM BORDA MINIMALISTA */
+.hero-image {
+  position: relative;
+}
+
+.profile-img {
+
+  width: 180px;
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 3px solid rgba(255,255,255,0.75);
+
+  box-shadow:
+    0 0 0 6px rgba(255,255,255,0.12),
+    0 15px 35px rgba(0,0,0,0.25);
+
+  transition: 0.3s ease;
+
+}
+
+.profile-img:hover {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 0 8px rgba(255, 77, 166, 0.18),
+    0 18px 45px rgba(0,0,0,0.3);
+}
+
+/* TEXTO HERO */
+.hero-text {
+  max-width: 650px;
+}
+
+.hero-text h1 {
+
+  font-size: 64px;
+  font-weight: 700;
+
+  margin-bottom: 15px;
+
+}
+
+/* LINHA MINIMALISTA */
+.line {
+
+  width: 90px;
+  height: 3px;
+
+  margin-bottom: 25px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0.9),
+    rgba(255,255,255,0)
+  );
+
+  border-radius: 999px;
+
+  position: relative;
+
+}
+
+.line::after {
+
+  content: "";
+
+  position: absolute;
+
+  width: 6px;
+  height: 6px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  opacity: 0.8;
+
+}
+
+.hero-text p {
+
+  font-size: 22px;
+  line-height: 1.7;
+
+  opacity: 0.95;
+
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 40px 20px;
+
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+/* TITULOS */
+h2 {
+
+  margin-bottom: 20px;
+
+  border-left: 5px solid var(--primary);
+
+  padding-left: 10px;
+
+  font-size: 28px;
+
+}
+
+/* =========================
+   GRID
+========================= */
+
+.grid {
+
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 20px;
+
+}
+
+/* CARD */
+.card {
+
+  background: var(--card);
+
+  padding: 20px;
+
+  border-radius: 15px;
+
+  transition: 0.3s ease;
+
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* TAGS */
+.tags {
+  margin-top: 15px;
+}
+
+.tag {
+
+  display: inline-block;
+
+  background: rgba(255, 77, 166, 0.15);
+
+  color: var(--primary);
+
+  padding: 6px 12px;
+
+  border-radius: 999px;
+
+  font-size: 12px;
+
+  margin-right: 8px;
+
+}
+
+/* SKILLS */
+.skills {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+}
+
+.skills span {
+
+  background: var(--primary);
+
+  color: white;
+
+  padding: 8px 12px;
+
+  border-radius: 999px;
+
+  font-size: 13px;
+
+}
+
+/* BOTÃO */
+.btn {
+
+  margin-top: 10px;
+
+  padding: 10px 14px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: var(--primary);
+
+  color: white;
+
+  cursor: pointer;
+
+}
+
+/* LINKS */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+
+  text-align: center;
+
+  padding: 30px;
+
+  opacity: 0.6;
+
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal {
+
+  display: none;
+
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0,0,0,0.85);
+
+  justify-content: center;
+  align-items: center;
+
+  z-index: 2000;
+
+  padding: 20px;
+
+}
+
+.modal-content {
+
+  max-width: 90%;
+  max-height: 85%;
+
+  border-radius: 18px;
+
+  box-shadow: 0 25px 70px rgba(0,0,0,0.6);
+
+  animation: zoom 0.25s ease;
+
+}
+
+.close {
+
+  position: absolute;
+
+  top: 20px;
+  right: 25px;
+
+  font-size: 42px;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+
+  z-index: 3000;
+
+}
+
+.close:hover {
+  transform: scale(1.2);
+  color: #ff4da6;
+}
+
+/* =========================
+   ANIMAÇÃO SCROLL
+========================= */
+
+.reveal {
+
+  opacity: 0;
+
+  transform: translateY(40px);
+
+  transition: 0.8s ease;
+
+}
+
+.reveal.active {
+
+  opacity: 1;
+
+  transform: translateY(0);
+
+}
+
+/* =========================
+   RESPONSIVO CORRIGIDO
+========================= */
+
+@media (max-width: 1024px) {
+
+  .hero-text h1 {
+    font-size: 52px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero {
+
+    padding: 90px 20px 60px;
+
+  }
+
+  .hero-content {
+
+    flex-direction: column;
+    text-align: center;
+
+    gap: 25px;
+
+  }
+
+  .hero-text {
+
+    max-width: 100%;
+
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .line {
+    margin: 15px auto;
+  }
+
+  .profile-img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+
+}
+
+.theme-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  z-index: 9999; /* 🔥 garante que nunca some */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+  transition: 0.3s ease;
+
+  color: white;
+}
+
+/* modo claro */
+body:not(.dark) .theme-btn {
+  color: #1a1a1a;
+}
+
+/* hover */
+.theme-btn:hover {
+  transform: scale(1.08);
+}
