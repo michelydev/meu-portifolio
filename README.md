@@ -1,4 +1,4 @@
-# Michelely Archetti | Portfólio
+# Michely Archetti | Portfólio
 
 Portfólio pessoal desenvolvido para apresentação profissional como desenvolvedora Front-end, reunindo projetos, habilidades e evolução contínua na área de tecnologia.
 
