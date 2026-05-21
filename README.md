@@ -1,4 +1,4 @@
-# Michelely Archetti — Portfólio
+# Michelely Archetti | Portfólio
 
 Portfólio pessoal desenvolvido para apresentação profissional como desenvolvedora Front-end, reunindo projetos, habilidades e evolução contínua na área de tecnologia.
 
@@ -60,17 +60,6 @@ Projeto hospedado via GitHub Pages:
 
 https://michelydev.github.io/meu-portifólio/
 
----
-
-## 📈 Roadmap
-
-- [ ] Dark mode
-- [ ] Animações avançadas (scroll reveal)
-- [ ] Integração com API de projetos GitHub
-- [ ] Melhorias de acessibilidade (ARIA)
-- [ ] Otimização de performance
-
----
 
 ## 📫 Contato
 
