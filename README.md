@@ -58,7 +58,7 @@ portfolio/
 
 Projeto hospedado via GitHub Pages:
 
-https://michelydev.github.io/SEU-REPOSITORIO/
+https://michelydev.github.io/meu-portifólio/
 
 ---
 
