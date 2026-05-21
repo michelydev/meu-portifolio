@@ -58,7 +58,7 @@ portfolio/
 
 Projeto hospedado via GitHub Pages:
 
-https://SEU-USUARIO.github.io/SEU-REPOSITORIO/
+https://michelydev.github.io/SEU-REPOSITORIO/
 
 ---
 
@@ -76,7 +76,7 @@ https://SEU-USUARIO.github.io/SEU-REPOSITORIO/
 
 - GitHub: https://github.com/SEU-USUARIO
 - LinkedIn: https://linkedin.com/in/SEU-PERFIL
-- Email: SEU-EMAIL
+- Email: michelliarchetti@gmail.com
 
 ---
 
