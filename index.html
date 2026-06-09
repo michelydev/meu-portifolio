@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Michely Archetti | Portfólio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="bg-glow glow1"></div>
+  <div class="bg-glow glow2"></div>
+
+  <div class="cursor-glow"></div>
+  <div class="cursor-dot"></div>
+
+<nav class="navbar">
+
+  <div class="logo">Michely</div>
+
+  <button class="menu-toggle" id="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#sobre">Sobre Mim</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#skills">Competências</a></li>
+    <li><a href="#certificados">Certificados</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+
+</nav>
+
+  <button class="theme-btn" onclick="toggleTheme()">
+    <span id="theme-icon"></span>
+  </button>
+
+  <header class="hero">
+
+    <div class="hero-content">
+
+      <div class="hero-image">
+        <img src="imagens/perfil.jpeg" alt="Foto de Michely" class="profile-img">
+      </div>
+
+      <div class="hero-text">
+
+        <h1>Michely Archetti</h1>
+
+        <div class="line"></div>
+
+        <p>
+          Desenvolvendo projetos criativos, interfaces modernas e soluções através da tecnologia!
+        </p>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="container">
+
+    <section id="sobre">
+      <h2 class="reveal">Sobre mim</h2>
+
+      <article class="card reveal">
+        <p>
+          Desenvolvo projetos digitais voltados para programação,
+          interfaces e organização de sistemas, unindo criatividade,
+          tecnologia e soluções funcionais.
+
+          Busco criar experiências modernas, organizadas e visuais,
+          sempre evoluindo através da prática e da criação de novos projetos.
+        </p>
+      </article>
+    </section>
+
+<section id="projetos">
+  <h2 class="reveal">Projetos</h2>
+
+  <div class="grid">
+
+    <article class="card project-card reveal">
+
+      <img src="imagens/pim3.jpeg" alt="Plataforma Educacional">
+
+      <h3>Plataforma Educacional</h3>
+
+      <p>
+        Plataforma para aplicação de questionários
+        e avaliações desenvolvida como projeto
+        acadêmico do 3º semestre de ADS.
+      </p>
+
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+      </div>
+
+      <a href="https://github.com/michelydev/MA-pim3" target="_blank" class="btn">
+        <i class="fab fa-github"></i> Repositório
+      </a>
+
+    </article>
+
+    <article class="card project-card reveal">
+
+      <img src="imagens/borges.jpeg" alt="Borges Fitness">
+
+      <h3>Borges Fitness</h3>
+
+      <p>
+        Landing page desenvolvida para uma academia local, com foco em apresentar
+        serviços, planos e diferenciais de forma moderna.
+      </p>
+
+      <div class="tags">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+      </div>
+
+      <a href="https://github.com/michelydev/BORGES-FITNESS" target="_blank" class="btn">
+        <i class="fab fa-github"></i> Repositório
+      </a>
+
+    </article>
+
+    <article class="card project-card reveal">
+
+      <img src="imagens/pim2.jpeg" alt="Sistema de Gestão Escolar">
+
+      <h3>Sistema de Gestão Escolar</h3>
+
+      <p>
+        Sistema acadêmico para gerenciamento de notas e atividades,
+        desenvolvido como projeto do 2º semestre de ADS.
+      </p>
+
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">C</span>
+        <span class="tag">SQLite</span>
+      </div>
+
+      <a href="https://github.com/michelydev/m.a-PIM2" target="_blank" class="btn">
+        <i class="fab fa-github"></i> Repositório
+      </a>
+
+    </article>
+
+  </div>
+</section>
+
+    <section id="skills">
+      <h2 class="reveal">Competências</h2>
+
+      <article class="card skills reveal">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>C#</span>
+        <span>Figma</span>
+        <span>UML</span>
+        <span>GitHub</span>
+        <span>Pacote Office</span>
+      </article>
+    </section>
+
+    <section id="certificados">
+      <h2 class="reveal">Certificados</h2>
+
+      <div class="grid">
+
+        <article class="card reveal">
+          <h3>Informática Básica - SENAI</h3>
+          <p>Curso com foco em criação de planilhas, documentos e apresentações.</p>
+
+          <div class="tags">
+            <span class="tag">Excel</span>
+            <span class="tag">Word</span>
+            <span class="tag">PowerPoint</span>
+          </div>
+
+          <button class="btn" onclick="openModal('imagens/info.jpeg')">
+            Ver certificado
+          </button>
+        </article>
+
+        <article class="card reveal">
+          <h3>LGPD</h3>
+          <p>Fundamentos da proteção de dados e segurança da informação.</p>
+
+          <div class="tags">
+            <span class="tag">LGPD</span>
+            <span class="tag">Segurança</span>
+          </div>
+
+          <button class="btn" onclick="openModal('imagens/lgpd.jpeg')">
+            Ver certificado
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+    <div id="certificateModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+
+  </main>
+
+  <footer class="footer" id="contato">
+
+    <div class="footer-line"></div>
+
+    <div class="footer-content">
+
+      <a href="https://github.com/michelydev" target="_blank" class="footer-item">
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/michely-archetti" target="_blank" class="footer-item">
+        <i class="fab fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+
+      <a href="mailto:michelliarchetti@gmail.com" class="footer-item">
+        <i class="fas fa-envelope"></i>
+        <span>Email</span>
+      </a>
+
+    </div>
+
+    <p class="footer-copy">
+      Feito por Michely Archetti | © 2026
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>>
